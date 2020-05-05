@@ -1,0 +1,220 @@
+@media only screen and (min-width:300px) and (max-width:699px){
+body {
+	background:url("../src/bg-content.png");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.blur{
+	backdrtop-filter:blur(8px);
+}
+
+.footer {
+	z-index:2;
+	position:fixed;
+	width:100%;
+	height:50px;
+	background-color:gray;
+	margin-top:50px;
+}
+.header {
+	z-index:2;
+	position:fixed;
+	width:100%;
+	height:75px;
+	background-color:gray;
+}
+
+#request{
+	z-index:2;
+	position:absolute;
+	margin-top:38px;
+	right:190px;
+	top:1px;
+	font-size:11.5px;
+}
+#logout{
+	z-index:2;
+	position:absolute;
+	top:2px;
+	right:1px;
+	font-size:11.5px;
+}
+#admin{
+	z-index:2;
+	position:absolute;
+	top:38px;
+	right:1px;
+	font-size:11.5px;
+}
+#addd{
+	z-index:2;
+	position:absolute;
+	top:2px;
+	font-size:10px;
+	right:135px;
+}
+#icon{
+top:0%;
+margin-top:-20px;
+}
+bur{
+position:absolute;
+bottom:0%;
+}
+#back{
+position:absolute;
+left:0%
+}
+}
+
+@media only screen and (min-width:700px) and (max-width:1023px){
+body {
+	background:url("../src/bg-content.png");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.blur{
+	backdrtop-filter:blur(8px);
+}
+
+.footer {
+	z-index:2;
+	position:fixed;
+	width:100%;
+	height:50px;
+	background-color:gray;
+	margin-top:50px;
+}
+.header {
+	z-index:2;
+	position:fixed;
+	width:100%;
+	height:75px;
+	background-color:gray;
+}
+#logout{
+	z-index:2;
+	position:absolute;
+	top:0%;
+	right:0%;
+	font-size:15px;
+}
+#admin{
+	z-index:2;
+	position:absolute;
+	top:0%;
+	right:160px;
+	font-size:15px;
+}
+#request{
+	z-index:2;
+	position:absolute;
+	margin-top:38px;
+	right:0px;
+	top:1px;
+	font-size:13px;
+}
+#addd{
+	z-index:2;
+	position:absolute;
+	top:38px;
+	font-size:12px;
+	right:140px;
+}
+#icon{
+	position:absolite;
+	top:0%;
+	left:0%;
+	margin-top:-20px;
+}
+bur{
+position:absolute;
+bottom:0%;
+}
+#back{
+position:absolute;
+left:0%
+}
+}
+
+@media only screen and (min-width:1024px){
+body {
+	background:url("../src/bg-content.png");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.blur{
+	backdrtop-filter:blur(8px);
+}
+
+.footer {
+	z-index:2;
+	position:fixed;
+	width:100%;
+	height:25px;
+	background-color:gray;
+	bottom:0px;
+	color:white;
+}
+.header {
+	z-index:2;
+	position:fixed;
+	width:100%;
+	height:65px;
+	background-color:gray;
+}
+.header-prof {
+	z-index:2;
+	width:100%;
+	margin-top:500px;
+	height:25px;
+	background-color:gray;
+}
+
+#logout{
+	z-index:2;
+	position:absolute;
+	top:0%;
+	right:0%;
+}
+#request{
+	z-index:2;
+	position:absolute;
+	top:0%;
+	right:600px;
+	top:1px;
+}
+#admin{
+	z-index:2;
+	position:absolute;
+	top:0%;
+	right:170px;
+}
+#addd{
+	z-index:2;
+	position:absolute;
+	top:0%;
+	right:430px;
+	font-size:15px;
+}
+#icon{
+	position:absolite;
+	top:0%;
+	left:0%;
+	margin-top:-20px;
+}
+bur{
+position:absolute;
+bottom:0%;
+}
+#back{
+position:absolute;
+left:0%
+}
+}

@@ -1,0 +1,149 @@
+@media only screen and (min-width:0px) and (max-width:751px) {
+.register {
+margin-top:50px; position:absolute; left:50%; font-size:31px; color:#E2E2E2; margin-left:-98px;
+}
+.login{
+margin-top:50px; position:absolute; left:50%; font-size:31px; color:#FFFF; margin-left:-55px;
+}
+.imager{display:none;}
+.body {
+	
+	height:100%;
+background-color: #4461C8;
+}
+.start {
+	position:absolute;
+	left:10%;
+	width:80%;
+	margin-top:30px	;
+}
+.pur {
+font-family: Share;	
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 174.19%;
+text-align: center;
+color: #FFFFFF;
+width:320px;
+height: 153px;
+left: 10%;
+
+top: 300px;
+margin:50px;
+margin-left:0px;
+background: linear-gradient(180deg, #BF20C7 14.69%, rgba(187, 32, 199, 0.58589) 89.52%);
+border-radius: 106px;
+}
+
+.stylebutton{
+
+color:#FFFF;
+background-color: #B956C9;
+border-radius:68px;
+position:absolute;
+left:50%; margin-left:-110px; min-width:200px;
+}
+.pur2 {
+font-family: Share;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 174.19%;
+text-align: center;
+color: #FFFFFF;
+min-width:320px;
+height: 153px;
+top: 500px;
+margin:50px;
+margin-left:0px;
+margin-top:0;
+background: linear-gradient(180deg, #BF20C7 14.69%, rgba(187, 32, 199, 0.58589) 89.52%);
+border-radius: 106px;
+
+
+
+}
+.buttons{
+	position:absolute;
+	top:200px;
+	left:50%;
+	margin-left:-160px;
+padding-left:0px;
+}
+
+}
+@media only screen and (min-width:751px) {
+.imager{ height:100%; z-index:-1; min-width:800px; position:fixed; right:0px;}
+.body {
+	width:750px;
+	height:100%;
+background-color: #4461C8;
+}
+.start {
+	margin-left:50px;
+	margin-top:50px;
+
+
+}
+.pur {
+font-family: Share;	
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 174.19%;
+text-align: center;
+color: #FFFFFF;
+width: 461px;
+height: 153px;
+left: 10%;
+
+top: 300px;
+margin:50px;
+background: linear-gradient(180deg, #BF20C7 14.69%, rgba(187, 32, 199, 0.58589) 89.52%);
+border-radius: 106px;
+}
+.pur2 {
+font-family: Share;
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 174.19%;
+text-align: center;
+color: #FFFFFF;
+width: 461px;
+height: 153px;
+left: 10%;
+top: 500px;
+margin:50px;
+margin-top:0;
+background: linear-gradient(180deg, #BF20C7 14.69%, rgba(187, 32, 199, 0.58589) 89.52%);
+border-radius: 106px;
+
+
+
+}
+.buttons{
+padding-left:60px;
+}
+.stylebutton{
+font-family: Share;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+color:#FFFF;
+background-color: #B956C9;
+border-radius:68px;
+position:absolute;
+width:350px;
+height:50px;
+left:50%; margin-left:-200px; min-width:200px;
+
+}
+.login{
+margin-top:50px; position:absolute; left:50%; font-size:31px; color:#FFFF; margin-left:-65px;
+}
+.register {
+margin-top:50px; position:absolute; left:50%; font-size:31px; color:#E2E2E2; margin-left:-110px;
+}
+}
