@@ -1,0 +1,25 @@
+.nav-con
+{
+background-color:#4461C8;
+min-height:104px;
+}
+    p.new:after {
+      content: "Новьё!"; /* Добавляемый текст */ 
+      color: #333; /* Цвет текста */ 
+      background-color: #fc0; /* Цвет фона */ 
+      font-size: 90%; /* Размер шрифта */ 
+      padding: 2px; /* Поля вокруг текста */ 
+    }
+@media only screen and (min-width:0px) and (max-width:801px) {
+.logo {
+	padding-top:10px;
+	padding-left:20px;
+	width:90%;
+}
+}
+@media only screen and (min-width:801px) and (max-width:2000px) {
+.logo{
+position:absolute; 
+ left:50%; margin-left:-200px;width:400px; margin-top:-40px;
+	
+}
