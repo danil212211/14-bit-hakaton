@@ -1,6 +1,6 @@
 <?php
 	require ("bd.php");
-	$result = mysql_query ("SELECT * FROM Text WHERE User_id='$_COOKIE[id]'",$db);
+	$result = mysql_query ("SELECT * FROM Text WHERE id='$_POST[id]'",$db);
 	$row=mysql_fetch_array($result);
 	echo'
 <html>
@@ -36,15 +36,26 @@
   </div>
   <label>Обложка</label
   <div class="form-group">
-	<br><input  name="Photo" type="file" class="file" accept=".jpg, .jpeg, .png">  
-	<input type="checkbox" class="form-check-input" name="wer" value="'.$row["Image"].'" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Оставить фотографию?</label>
+	<br><input  name="Photo" type="file" class="file" accept=".jpg, .jpeg, .png"> 
+		  <div class="form-group">
+  <label>Презентация</label
+  <div class="form-group">
+	<br><input required name="Present" type="file" class="file" accept=".pptx, .pdf">
+  <div class="form-group">
+  <label>Бизнес-модель</label
+  <div class="form-group">
+	<br><input required name="Biz" type="file" class="file" accept=".txt, .word,">
+  <div class="form-group">
   <div class="form-group">
     <label>Краткое описание проекта</label>
     <textarea name="description" required class="form-control" style=" top:0px; height:120px;" maxlength="100">'.$row["description"].'</textarea>
   </div>
+<div class="form-group">
+    <label>Стоимость проекта</label>
+    <textarea name="price" required class="form-control" style="height:50px;" ></textarea>
+  </div>
   <div class="form-group">
-    <label>Место реализации проекта</label>
+    <label>Контактные данные</label>
     <textarea name="town" required class="form-control" >'.$row["town"].'</textarea>
   </div>
 

@@ -25,7 +25,7 @@ echo '<html>
 				</form>
 		</div>
 
-		<a href="login-start.html" style="color:#E2E2E2;" class="login" >Войти</a>
+		<a href="login.html" style="color:#E2E2E2;" class="login" >Войти</a>
 		</div>
 <div class="modal fade" style="margin-top:20px;" id="Register" tabindex="-1" role="dialog" aria-labelledby="RegisterModalLabel" aria-hidden="true">
   <div class="container" style="background-color:white; max-width:100%; width:700px; height:450px; border-radius:95px;">
@@ -36,8 +36,6 @@ echo '<html>
 			</div>
 				<button type="submit" class="btn" style="position:absolute; left:50%; margin-left:-160px; min-width:300px; font-size:50px;
  color:#FFFF; background-color: #B956C9; border-radius:68px; height:90px;">Ввести</button></form>
-			<div class="modal-dialog">
-			</div>
       </div>
 </div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -78,7 +76,7 @@ $prov=mt_rand(1000000,9999999);
 		$mail->addAddress($login);
    			//Content
 		$mail->isHTML(true);                                  
-		$mail->Subject = '=?UTF-8?B?' . base64_encode('Информация о регистрации на Пэтшэринг'.''.$next_id) . '?=';
+		$mail->Subject = '=?UTF-8?B?' . base64_encode('Информация о регистрации на StartUP_bit'.''.$next_id) . '?=';
 		$mail->Body = "Благодарим за регистрацию! Ваш код подтверждения - $prov ";
 		$mail->send();
 }

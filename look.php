@@ -2,7 +2,7 @@
 echo '
 <html>
 <head>
-	<link href="css/content.css" rel="stylesheet">
+	<link href="css/content-look.css" rel="stylesheet">
 	<link href="css/in.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,19 +34,38 @@ echo '
 	$result = mysql_query ("SELECT * FROM Text WHERE id=$_POST[id]",$db);
 	$row=mysql_fetch_array($result);
 	echo'
-	<div >
-    <img align="left"  src="src/'.$row["Image"].'" style="height:400px;"     alt="Card image cap">
-      <h5 >'.$row["title"].'<br>
-      <small>'.$row["description"].'</small></h5>
-    </div><br>
-	<h5>'.$row[Text].'
-	<small>'.$row[town].'</small>  </h5>				
+	<div  class="container-fluid item" style="height:100%; font-family:share;">
+    <img align="left"  src="src/'.$row["Image"].'" style="padding-top:10px; height:400px;"     alt="Card image cap">
+      <p style="font-size:80px;">'.$row["title"].'</p>
+      <p style="font-size:40px;">'.$row["description"].'</p>
+	<p style="font-size:30px;">
+	Контактные данные:	'.$row[town].'		<br>
+	Стоимость проекта: '.$row["Price"].'</p>
+	<a href="src/'.$row[Present].'">
+	<button class="btn btn-primary" style="width:400px;  font-size:40px; height:100px;; border-radius:60px;" >Презентация</button></a>
+	<a href="src/'.$row[Biz].'">
+	<button class="btn btn-primary" style="width:400px; font-size:40px; height:100px; border-radius:60px;" >Бизнес-модель</button></a>
+	<p>'.$row[Text].'</p>
 	</div>
-  </div>
-</div>	
-</div>
-</div>
+   <script src="https://unpkg.com/fast-average-color/dist/index.min.js"></script>';
+   echo "
+    <script>
+window.addEventListener('load', function() {
+    var
+        ac = new FastAverageColor(),
+        items = document.querySelectorAll('.item');
+
+    for (var i = 0; i < items.length; i++) {
+        var
+            item = items[i],
+            color = ac.getColor(item.querySelector('img'));
+
+        item.style.backgroundColor = color.rgb;
+        item.style.color = color.isDark ? 'white' : 'black';
+    }
+}, false);
+    </script>
 </body>
 </html>
-';	
+";	
 ?>

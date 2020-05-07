@@ -11,15 +11,24 @@
 	<div class="body">
 		<div class="container-fluid" style="z-index:-1;">
 			<img src="src/StartUp_bit.png" class="start">
-			<br>
+			<br><span  class="element align-middle" ></span>
 			<div class="buttons">
-				<a href="check-inves.php"><button type="button" class="btn pur xlg ">Инвестор</button></a>
+				<a href="check-inves.php"><button type="button" class="btn pur xlg ">ИНВЕСТ</button></a>
 				<br>
-				<a href="check-start.php"><button type="button" class="btn pur2 ">Стартап</button></a>
+				<a href="check-start.php"><button type="button" class="btn pur2 ">СТАРТАП</button></a>
 			</div>
 		</div>
 	</div>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+var options = {
+  strings: ['Привет.', 'Как дела?','Если что надо, обращайся'],
+  typeSpeed: 80,
+      loop: true,
+};
+
+var typed = new Typed('.element', options);</script>
 </body>
 </html>

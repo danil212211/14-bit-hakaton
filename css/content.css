@@ -1,6 +1,18 @@
+
+@font-face{
+	font-family:"share";
+	src: url("12228.ttf") format("truetype");
+	font-style:normal;
+	font-weight:normal;
+}
+body{
+font-family:share;
+background-color:#FEFDFD;	
+}
 .nav-con
 {
 background-color:#4461C8;
+min-width:208px;
 min-height:104px;
 }
     p.new:after {
@@ -23,3 +35,4 @@ position:absolute;
  left:50%; margin-left:-200px;width:400px; margin-top:-40px;
 	
 }
+.style card-img-top > img {width:100%; height:95%;}

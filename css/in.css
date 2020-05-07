@@ -6,23 +6,25 @@
 background-color: #4461C8;
 }
 .start {
+	width:600px;
 	margin-left:50px;
 	margin-top:50px;
 
 
 }
+.element{
+  margin-left:50px;font-size:50px;}
 .pur {
 font-family: Share;	
 font-style: normal;
 font-weight: bold;
-font-size: 52px;
+font-size: 80px;
 line-height: 174.19%;
 text-align: center;
 color: #FFFFFF;
 width: 461px;
 height: 153px;
 left: 10%;
-
 top: 300px;
 margin:50px;
 background: linear-gradient(180deg, #BF20C7 14.69%, rgba(187, 32, 199, 0.58589) 89.52%);
@@ -32,14 +34,12 @@ border-radius: 106px;
 font-family: Share;
 font-style: normal;
 font-weight: bold;
-font-size: 52px;
+font-size: 80px;
 line-height: 174.19%;
 text-align: center;
 color: #FFFFFF;
 width: 461px;
-height: 153px;
 left: 10%;
-top: 500px;
 margin:50px;
 margin-top:0;
 background: linear-gradient(180deg, #BF20C7 14.69%, rgba(187, 32, 199, 0.58589) 89.52%);
@@ -85,6 +85,9 @@ margin-top:50px; position:absolute; left:50%; font-size:31px; color:#E2E2E2; mar
 .login{
 margin-top:50px; position:absolute; left:50%; font-size:31px; color:#FFFF; margin-left:-55px;
 }
+.element{position:absolute; left:50%; margin-left:-230px; font-size:40px;
+bottom:100px; }
+
 .imager{display:none;}
 .body {
 	width:100%;
@@ -152,4 +155,15 @@ border-radius: 106px;
 padding-left:0px;
 }
 
+}
+@font-face{
+	font-family:"share";
+	src: url("12228.ttf") format("truetype");
+	font-style:normal;
+	font-weight:normal;
+}
+body{
+font-family:share;
+
+	
 }

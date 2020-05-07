@@ -1,8 +1,10 @@
-
+<?php
+session_start();
+ include("check-user.php");
+echo'
 <html>
 <head>
 	<link href="css/content.css" rel="stylesheet">
-	<link href="css/in.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<meta charset="utf-8">
@@ -19,6 +21,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto	">
  <li class="nav-item"> <a href="add.html"  class="nav-link ">Создать проект</a></li>
+';
+if ($userdata['role']=="2")  { 
+		echo '<li class="nav-item"> <a href="admin.php"  class="nav-link ">Админ панель</a></li>';}
+echo '
 </ul>
 <ul class="navbar-nav my-2 my-lg-0"><li class="nav-item my-2 my-lg-0">
 <li><a href="my.php" class="nav-link">Мои проекты</a></li>
@@ -28,11 +34,13 @@
 </nav>
 
  <div class="container-fluid">
-<div class="row">
-<?php require ("bd-content.php");?>
+<div class="row">';
+ require ("bd-content.php");
+echo '
 </div></div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		
 </body>
-</html>
+</html>';
+?>
