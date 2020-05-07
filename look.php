@@ -18,12 +18,12 @@ echo '
 	<a href="index.html"><img src="src/StartUp_bit.png" class="logo" ></a>  
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a href="content-inves.php" class=" nav-link">Вернуться</a></li>
-				<li class="nav-item"> <a href="add.html"  class="nav-link ">Создать проект</a></li>
+				<li class="nav-item"><a href="content-inves.php" class=" nav-link" style="color:white;">Каталог</a></li>
+
 			</ul>
 			<ul class="navbar-nav my-2 my-lg-0"><li class="nav-item my-2 my-lg-0">
-				<li><a href="my.php" class="nav-link">Мои проекты</a></li>
-				<li class="nav-item "><a href="logout.php" class=" nav-link">Выйти из аккаунта</a></li>
+
+				<li class="nav-item "><a href="logout.php" class=" nav-link" style="color:white;">Выйти из аккаунта</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -34,17 +34,18 @@ echo '
 	$result = mysql_query ("SELECT * FROM Text WHERE id=$_POST[id]",$db);
 	$row=mysql_fetch_array($result);
 	echo'
-	<div  class="container-fluid item" style="height:100%; font-family:share;">
-    <img align="left"  src="src/'.$row["Image"].'" style="padding-top:10px; height:400px;"     alt="Card image cap">
+	<div  class="container-fluid item" style="height:200%; font-family:share;">
+    <img align="left"  src="src/'.$row["Image"].'" style="padding:10px; padding-left:0; height:400px;"     alt="Card image cap">
       <p style="font-size:80px;">'.$row["title"].'</p>
       <p style="font-size:40px;">'.$row["description"].'</p>
 	<p style="font-size:30px;">
 	Контактные данные:	'.$row[town].'		<br>
 	Стоимость проекта: '.$row["Price"].'</p>
 	<a href="src/'.$row[Present].'">
-	<button class="btn btn-primary" style="width:400px;  font-size:40px; height:100px;; border-radius:60px;" >Презентация</button></a>
+	<button class="btn btn-bit" style="width:250px;  font-size:25px; height:70px;; border-radius:60px;" >Презентация</button></a>
 	<a href="src/'.$row[Biz].'">
-	<button class="btn btn-primary" style="width:400px; font-size:40px; height:100px; border-radius:60px;" >Бизнес-модель</button></a>
+	<button class="btn btn-bit" style="width:250px; font-size:25px; height:70px; border-radius:60px;" >Бизнес-модель</button></a>
+	</p>
 	<p>'.$row[Text].'</p>
 	</div>
    <script src="https://unpkg.com/fast-average-color/dist/index.min.js"></script>';

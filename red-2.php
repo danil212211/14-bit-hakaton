@@ -7,8 +7,8 @@
 	$text=$_POST['text'];
 	$uploaddir = '/var/www/14-bit/www/startup_bit/src/';
 	$prev=($_FILES['Photo']['name']);
-	$prev2=mt_rand(100000,999999).($_FILES['Present']['name']);
-	$prev3=mt_rand(100000,999999).($_FILES['Biz']['name']);
+	$prev2=($_FILES['Present']['name']);
+	$prev3=($_FILES['Biz']['name']);
 	$uploadfile = $uploaddir .$prev;
 	$uploadfile2 = $uploaddir .$prev2;
 	$uploadfile3 = $uploaddir .$prev3;
@@ -19,9 +19,14 @@
 	copy($_FILES['Present']['tmp_name'], $uploadfile2);
 	copy($_FILES['Biz']['tmp_name'], $uploadfile3);
 	include ("bd.php");
-	if ($prev=="") { 	$result=mysql_query ("UPDATE Text SET title='$title', Present='$prev2' , Biz='$prev3', description='$description' , Text='$text' WHERE id='$id'"); } else
+	if ($prev=="") { 	$result=mysql_query ("UPDATE Text SET Price='$price' title='$title',  description='$description' , Text='$text' WHERE id='$id'"); } else
 		{
-	$result=mysql_query ("UPDATE Text SET Price='$price' title='$title', description='$description', Image='$prev', Present='$prev2' , Biz='$prev3'  , Text='$text' WHERE id='$id'");
+	$result=mysql_query ("UPDATE Text SET Price='$price' title='$title', description='$description', Image='$prev'  , Text='$text' WHERE id='$id'");
 		}
-	header("location:my.php");	
+	if ($prev2!="") {
+	$result=mysql_query ("UPDATE Text SET Present='$prev2' WHERE id='$id'"); }
+	
+	if ($prev3!="") {
+	$result=mysql_query ("UPDATE Text SET Biz='$prev3' WHERE id='$id'"); }
+	header("location:my.php");	 //Present='$prev2' , Biz='$prev3',
 ?>

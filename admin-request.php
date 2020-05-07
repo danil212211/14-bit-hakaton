@@ -13,6 +13,7 @@ echo'
 	<title>14-bit</title>
 </head>
 <body>
+<div  style="font-family:share">
 <nav class="navbar navbar-expand-lg navbar-dark nav-con">
 
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,24 +22,20 @@ echo'
 <a href="index.html"><img src="src/StartUp_bit.png" class="logo" ></a>  
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto	">
- <li class="nav-item"> <a href="add.html"  class="nav-link ">Создать проект</a></li>
-';
-if ($userdata['role']=="2")  { 
-		echo '<li class="nav-item"> <a href="admin.php"  class="nav-link ">Админ панель</a></li>';}
-echo '
+ <li class="nav-item"> <a href="add.html"   class="btn btn-outline-light " style="border-radius:60px; margin-right:10px;">Создать проект</a></li>
+<li class="nav-item"> <a href="content-inves.php"  class="btn btn-outline-light " style="border-radius:60px; margin-right:10px;">Каталог</a></li>
 </ul>
 <ul class="navbar-nav my-2 my-lg-0"><li class="nav-item my-2 my-lg-0">
-<li><a href="admin-request.php" class="nav-link">Заявки</a></li>
-<li class="nav-item "><a href="logout.php" class=" nav-link">Выйти из аккаунта</a></li>
+<li><a href="admin.php" class="btn btn-outline-light " style="border-radius:60px; margin-right:10px;">Админ-панель</a></li>
+<li class="nav-item "><a href="logout.php" class="btn btn-outline-light " style="border-radius:60px; margin-right:10px;">Выйти из аккаунта</a></li>
 </ul>
   </div>
 </nav>
-
  <div class="container-fluid">
 <div class="row">';
  require ("bd-content-admin-request.php");
 echo '
-</div></div>
+</div></div></div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		

@@ -14,6 +14,8 @@
     <div class="card-body">
       <h5 class="card-title"><p align="center">'.$row["title"].'</p></h5>
       <p class="card-text" align="center">'.$row["description"].'</p><form action="look.php"method="post">
+	  	  <p>
+	Стоимость проекта:'.$row["Price"].'</p>
 		<button  type="submit" class="btn  btn-outline-primary  btn-lg" name="id" id="bur" value="'.$row["id"].'" >Подробнее</button></form>
 		<button data-toggle="modal"  data-target="#YesModal'.$row["id"].'" class="btn  btn-outline-success btn-lg" name="id" id="bur" value="'.$row["id"].'" >Принять?</button>
 		<button data-toggle="modal"  data-target="#Modal'.$row["id"].'" class="btn  btn-outline-danger btn-lg"  >Отклонить?</button></form>

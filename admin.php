@@ -21,12 +21,12 @@ echo'
 <a href="index.html"><img src="src/StartUp_bit.png" class="logo" ></a>  
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto	">
- <li class="nav-item"> <a href="add.html"  class="nav-link ">Создать проект</a></li>
-<li class="nav-item"> <a href="content-inves.php"  class="nav-link ">Каталог</a></li>
+ <li class="nav-item"> <a href="add.html"   class="btn btn-outline-light " style="border-radius:60px; margin-right:10px;">Создать проект</a></li>
+<li class="nav-item"> <a href="content-inves.php"  class="btn btn-outline-light " style="border-radius:60px; margin-right:10px;">Каталог</a></li>
 </ul>
 <ul class="navbar-nav my-2 my-lg-0"><li class="nav-item my-2 my-lg-0">
-<li><a href="admin-request.php" class="nav-link">Заявки</a></li>
-<li class="nav-item "><a href="logout.php" class=" nav-link">Выйти из аккаунта</a></li>
+<li><a href="admin-request.php" class="btn btn-outline-light " style="border-radius:60px; margin-right:10px;">Заявки</a></li>
+<li class="nav-item "><a href="logout.php" class="btn btn-outline-light " style="border-radius:60px; margin-right:10px;">Выйти из аккаунта</a></li>
 </ul>
   </div>
 </nav>

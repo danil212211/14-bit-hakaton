@@ -16,7 +16,7 @@ header ("Location:https://14-bit.ru/startup_bit/login.html");
     }
     else
     {
-header ("Location:https://14-bit.ru/startup_bit/add.html");
+header ("Location:https://14-bit.ru/startup_bit/my.php");
     }
 }
 else

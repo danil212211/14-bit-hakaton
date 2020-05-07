@@ -14,7 +14,9 @@
 </div>
     <div class="card-body">
       <h5 class="card-title"><p align="center">'.$row["title"].'<small>
-      <br>'.$row["description"].'</small></p></h5><form action="look.php"method="post">
+      <br>'.$row["description"].'</small></p></h5><form action="look.php"method="post"><br>
+	  <p>
+	Стоимость проекта:'.$row["Price"].'</p>
       <button type="submit" style="margin-left: calc(50% - 80px);" class="btn btn-outline-dark btn-bit btn-lg" name="id" id="bur" value="'.$row["id"].'" >Подробнее...</button></form>
     </div>
   </div>
